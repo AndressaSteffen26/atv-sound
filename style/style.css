@@ -2,6 +2,7 @@
 					FONTE
 ==============================================*/
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -114,7 +115,10 @@ section {
 
 body {
 	line-height: 1;
-	font-family: "Hind Siliguri", sans-serif;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
 
 ol,
@@ -150,11 +154,12 @@ a {
 header nav{
 	display: flex;
 	justify-content: space-between;
-	padding: 2vw;
+	margin: 6vw 6vw 6vw 17vw;
 }
 
 header nav ul{
 	display: flex;
+	margin: 0 5vw 0vw 20vw;
 }
 
 header nav ul li a{
@@ -170,17 +175,17 @@ main section.banner{
 	display: flex;
 	margin: 6vw;
 	padding: 0vw 2vw 4vw 2vw;
-	border-bottom: 1px solid #9E9B9B;
 }
 main section div.banner-imagem img{
 	padding: 2vw 10vw 2vw 10vw;
 }
 main section div.banner-texto h1{
-	font-size: 4rem;
+	font-size: 3rem;
 	padding: 4vw 0 4vw 0;
 }
 main section div.banner-texto p{
-	font-size: 1.5rem;
+	font-size: 1rem;
+	line-height: 1.5;
 	color: #404852;
 	border-top: 1px solid #DEDEDE;
 	padding: 2vw 0 2vw 0;
@@ -195,9 +200,10 @@ main section div.samantha div.texto h2{
 	font-size: 1.1rem;
 }
 main section div.samantha p{
+	font-size: 1.1rem;
 	color:grey;
 	border: none;
-	padding: 0 1vw 0 1vw;
+	padding: 0.5vw 1vw 0 1vw;
 }
 /*============================
 			LISTA
@@ -205,34 +211,61 @@ main section div.samantha p{
 main section.lista{
 	display:flex;
 	margin: 6vw;
+	border-top: 1px solid #9E9B9B;
 	border-bottom: 1px solid #9E9B9B;
-	padding: 0 0 8vw 0;
-}
-main section.lista div.texto p{
-	padding: 0 8vw 0 10vw;
-	font-size: 1.5rem;
-	color: #404852;
+	padding: 8vw 0 8vw 0;
 }
 main section.lista div h1{
-	margin: 2vw 8vw 0 8vw;
+	margin: 1vw 8vw 0 8vw;
 	font-size: 6rem;
-	padding: 2vw 2vw 2vw 2vw;
+	padding: 2vw 2vw 4vw 2vw;
+}
+main section.lista div.texto p{
+	padding: 1vw 8vw 1vw 10vw;
+	font-size: 1.3rem;
+	line-height: 1.5;
+	color: #404852;
 }
 main section.lista div.lista ul li h2{
-	font-size: 3rem;
-	padding: 4vw 0 4vw 0;
+	font-size: 2rem;
+	padding: 8vw 0 0 0;
 }
 main section.lista div.lista ul li h2 span{
 	color: gray;
-	font-size: 2rem;
-	padding: 2vw 2vw 2vw 2vw;
+	font-weight: bold;
+	font-size: 1.5rem;
+	padding: 1vw 2vw 1vw 2vw;
 }
 main section.lista div.lista ul li p{
-	padding: 0 0 2vw 4vw;
-	font-size: 1.5rem;
+	padding: 2vw 0 4vw 6vw;
+	font-size: 1rem;
 	color: gray;
 	border-bottom: 1px solid #D8D8D8;
 }
 main section.lista div.lista ul li.ultimo p{
 	border: none;
+}
+/* ===============================================
+					Rodapé
+================================================== */
+footer {
+	text-align: left;
+	margin: 5vw 0 5vw 6vw;
+}
+
+footer ul {
+	display: flex;
+	justify-content: left;
+	padding: 0vw 1vw 2vw 0vw;
+}
+
+footer ul li {
+	margin: 10px 10px 10px 10px;
+	font-size: 2rem;
+}
+footer ul li a{
+	color: #21243D;
+}
+footer p{
+	color: #21243D;
 }
